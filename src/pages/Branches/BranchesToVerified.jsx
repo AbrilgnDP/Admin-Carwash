@@ -72,7 +72,7 @@ export const BranchesToVerified = () => {
 
   const bran = pendingBranches(branches);
 
-  const rowsWithIds = bran.map((item, _id) => ({
+  const rowsWithIds = branches.map((item, _id) => ({
     id: _id.toString(),
     ...item,
   }));

@@ -118,10 +118,10 @@ const Edit = () => {
       <Titles name={<h2 align="center">Editar Producto</h2>} />
 
       <Grid
-        color="#F7BFBF"
+        color="#e8790c"
         borderRadius={5}
         mt={3}
-        sx={{ border: 10, p: 5 }}
+        sx={{ border: 2, p: 5 }}
         container
         spacing={4}
       >
@@ -272,7 +272,7 @@ const Edit = () => {
             sx={{ margin: 2 }}
             onChange={formik.handleChange}
           />
-          <Typography>Descripción del prducto</Typography>
+          <Typography>Descripción del producto</Typography>
           <TextareaAutosize
             aria-label="minimum height"
             id="description"
@@ -359,7 +359,7 @@ const Edit = () => {
             alignItems={"center"}
           >
             <Grid item sx={{ display: "flex", justifyContent: "center" }}>
-              <Button type="submit" variant="contained">
+              <Button type="submit" variant="contained" sx={{ backgroundColor: "#144c24" }}>
                 Guardar
               </Button>
               <Button onClick={outEdit} variant="outlined" color="secondary">

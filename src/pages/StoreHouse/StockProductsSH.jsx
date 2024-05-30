@@ -166,13 +166,13 @@ const StockProductsSH = () => {
   
     return (
       <GridToolbarContainer sx={{justifyContent:'space-between'}}>
-        <Button onClick={handleGoToPage1}>Regresa a la pagina 1</Button>
+        <Button onClick={handleGoToPage1} sx={{ color: "#144c24" }}>Regresa a la pagina 1</Button>
         <GridToolbarQuickFilter/>
         <Button
         variant="text"
         startIcon={<Download/>}
         disableElevation
-        sx={{ color: "secondary" }}
+        sx={{ color: "#144c24" }}
         onClick={exportToExcel}
       >
         Descargar Excel
@@ -188,7 +188,7 @@ const StockProductsSH = () => {
       <Button
           variant="contained"
           disableElevation
-          sx={{ color: "primary", my: 5, p: 2, borderRadius: 5 }}
+          sx={{ color: "primary", my: 5, p: 2, borderRadius: 5, backgroundColor: "#144c24" }}
           onClick={createStoreHouse}
         >
           Agregar productos
@@ -237,8 +237,8 @@ const StockProductsSH = () => {
         
               actions.push(
                 <ButtonGroup variant="contained" color="primary">
-                  <Button onClick={()=>handleAddOpen(params.row)}>Agregar</Button>
-                  <Button onClick={()=>handleRemoveOpen(params.row)}>Quitar</Button>
+                  <Button onClick={()=>handleAddOpen(params.row)} sx={{ backgroundColor: "#144c24" }}>Agregar</Button>
+                  <Button onClick={()=>handleRemoveOpen(params.row)} sx={{ backgroundColor: "#144c24" }}>Quitar</Button>
                 </ButtonGroup>
               );
         

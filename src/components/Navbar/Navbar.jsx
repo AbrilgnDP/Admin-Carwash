@@ -104,9 +104,8 @@ export const Navbar = () => {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar sx={{backgroundColor:'white'}} position="fixed" open={open}>
-        <Toolbar style={{justifyContent:'space-between'}} >
-         
+      <AppBar sx={{backgroundColor:'#144c24'}} position="fixed" open={open}>
+        <Toolbar style={{justifyContent:'space-between', height: "82px"}} >
           <IconButton
             color="black"
             aria-label="open drawer"
@@ -119,7 +118,7 @@ export const Navbar = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography color="GrayText" variant="h4" >Bienvenido:{" "} {user.fullname} </Typography>
+          <Typography color="white" variant="h4" >Bienvenido:{" "} {user.fullname} </Typography>
           
           <Grid item direction={"row"} >
             
@@ -140,7 +139,7 @@ export const Navbar = () => {
         <DrawerHeader sx={{ backgroundColor: "#144c24" }}>
           <Tooltip title="Cerrar">
           <IconButton onClick={handleDrawerClose} >
-            <ChevronLeftIcon color="secondary" />
+            <ChevronLeftIcon color="#e8790c" />
             <Image width="50px" src={icono} />
           </IconButton>
           </Tooltip>

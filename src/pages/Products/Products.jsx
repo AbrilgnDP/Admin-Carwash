@@ -194,7 +194,7 @@ const Products = () => {
                 title="¿Estas seguro que deseas eliminar el producto?"
                 callbackToDeleteItem={() => deleteProduct(params.row._id)}
               />,
-              <GridActionsCellItem icon={<Edit />} onClick={()=>redirectPages(navigate,(params.row._id))}  label="Editar servicio" showInMenu />,
+              <GridActionsCellItem icon={<Edit />} onClick={()=>redirectPages(navigate,(params.row._id))}  label="Editar producto" showInMenu />,
                              
             ],
           },
