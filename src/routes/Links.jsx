@@ -13,7 +13,7 @@ import MuseumIcon from '@mui/icons-material/Museum';
 export const Links = [
   {
     title : "Sucursales",
-    path : "/auth/Sucursales",
+    path : "/auth/Sucursales/pending",
     Icon : <StoreIcon/>
 
   },
@@ -22,16 +22,16 @@ export const Links = [
     path: "/auth/usuarios",
     Icon: <Inbox />,
   },
-  {
-    title: "Servicios",
-    path: "/auth/servicios",
-    Icon: <CleaningServicesIcon />,
-  },
-  {
-    title: "Tipo de automovil",
-    path: "/auth/typeCar",
-    Icon: <DriveEtaIcon />,
-  },
+  // {
+  //   title: "Servicios",
+  //   path: "/auth/servicios",
+  //   Icon: <CleaningServicesIcon />,
+  // },
+  // {
+  //   title: "Tipo de automovil",
+  //   path: "/auth/typeCar",
+  //   Icon: <DriveEtaIcon />,
+  // },
   {
     title: "Categorías",
     path: "/auth/CategoriaServicios",
@@ -42,12 +42,12 @@ export const Links = [
     path: "/auth/SubCategorias",
     Icon: <KeyboardTabIcon />,
   },
-  {
-    title : "Membresias",
-    path : "/auth/Membresias",
-    Icon : <CardMembershipIcon/>
+  // {
+  //   title : "Membresias",
+  //   path : "/auth/Membresias",
+  //   Icon : <CardMembershipIcon/>
 
-  },
+  // },
   {
     title : "Productos",
     path : "/auth/Productos",

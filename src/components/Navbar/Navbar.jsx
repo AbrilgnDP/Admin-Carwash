@@ -99,7 +99,7 @@ export const Navbar = () => {
   };
 
   const handleDrawerClose = () => {
-    setOpen(false);
+    setOpen(false); 
   };
 
   return (
@@ -131,13 +131,13 @@ export const Navbar = () => {
       <Drawer
         PaperProps={{
           sx: {
-            backgroundColor: "#0E2E73",
+            backgroundColor: "#144c24",
           },
         }}
         variant="permanent"
         open={open}
       >
-        <DrawerHeader sx={{ backgroundColor: '"#0E2E73"' }}>
+        <DrawerHeader sx={{ backgroundColor: "#144c24" }}>
           <Tooltip title="Cerrar">
           <IconButton onClick={handleDrawerClose} >
             <ChevronLeftIcon color="secondary" />

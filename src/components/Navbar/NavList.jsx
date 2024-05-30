@@ -24,7 +24,7 @@ function NavListDrawer({ navArrayLinks}) {
             justifyContent: open ? "initial" : "center",
             backgroundColor: "inherit",
             "&:hover": {
-              backgroundColor: "#95C8FF",
+              backgroundColor: "#207d3b",
             },
             px: 3,
           }}
@@ -57,7 +57,7 @@ function NavListDrawer({ navArrayLinks}) {
                   justifyContent: open ? "initial" : "center",
                   backgroundColor: "inherit",
                   "&:hover": {
-                    backgroundColor: "#95C8FF",
+                    backgroundColor: "#207d3b",
                   },
                   px: 3,
                 }}
@@ -67,7 +67,7 @@ function NavListDrawer({ navArrayLinks}) {
                     minWidth: 0,
                     mr: open ? 3 : "auto",
                     justifyContent: "center",
-                    color: "#3877FF",
+                    color: "#e8790c",
                   }}
                 >
                   {item.Icon}

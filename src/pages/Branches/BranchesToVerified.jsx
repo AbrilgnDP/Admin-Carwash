@@ -129,7 +129,7 @@ export const BranchesToVerified = () => {
 
   return (
     <div style={{ marginLeft: "10%", height: "70%", width: "80%" }}>
-      <Title>Sucursales pendientes por validar </Title>
+      <Title>Sucursales</Title>
       <DataGrid
         sx={{ fontSize: "20px", fontFamily: "BikoBold" }}
         columns={[

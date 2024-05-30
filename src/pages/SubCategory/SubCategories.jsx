@@ -108,13 +108,13 @@ const SubCategories = () => {
   
     return (
       <GridToolbarContainer sx={{justifyContent:'space-between'}}>
-        <Button onClick={handleGoToPage1}>Regresa a la pagina 1</Button>
+        <Button onClick={handleGoToPage1} sx={{ color: "#144c24" }}>Regresa a la pagina 1</Button>
         <GridToolbarQuickFilter/>
         <Button
         variant="text"
         startIcon={<Download/>}
         disableElevation
-        sx={{ color: "secondary" }}
+        sx={{ color: "#144c24" }}
         onClick={exportToExcel}
       >
         Descargar Excel
@@ -130,10 +130,10 @@ const SubCategories = () => {
       <Button
           variant="contained"
           disableElevation
-          sx={{ color: "primary", my: 5, p: 2, borderRadius: 5 }}
+          sx={{ color: "primary", my: 5, p: 2, borderRadius: 5, backgroundColor: "#144c24" }}
           onClick={createSubCategory}
         >
-          Registrar nuevo subcategoría
+          Registrar nueva subcategoría
         </Button>
       <DataGrid
         sx={{ fontSize: "20px", fontFamily: "BikoBold" }}

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-
+import React, { useEffect } from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import { Box, Typography, Grid } from "@mui/material";
-import { useBranches } from "../../hooks/useBranches";
+import { useBranches } from "../../hooks/useBranches"
+
 export const Branches = () => {
    const { branches, loadBranches, pendingToVerify, activeBranches, navigate } =  useBranches()
    useEffect(() => {
@@ -27,7 +27,7 @@ const res1 = activeBranches(branches)
       paddingLeft={"80px"}
     >
       <Grid item width={"100%"} height={"60px"}>
-        <Typography textAlign={"center"} variant="h1" color={'primary'} fontSize={"50px"}>
+        <Typography textAlign={"center"} variant="h1" color={'#144c24'} fontSize={"50px"}>
           Sucursales
         </Typography>
       </Grid>
@@ -47,7 +47,7 @@ const res1 = activeBranches(branches)
             <Typography textAlign={'center'} variant="h3">{res}</Typography>
           </CardContent>
           <CardActions>
-            <Button onClick={() => navigate('/auth/Sucursales/pending')} size="small">Ver detalles</Button>
+            <Button onClick={() => navigate('/auth/Sucursales/pending')} size="small" style={{color: '#144c24'}}>Ver detalles</Button>
           </CardActions>
         </Card>
         {/* Sucursales activas */}
@@ -57,12 +57,9 @@ const res1 = activeBranches(branches)
             <Typography textAlign={'center'} variant="h3">{res1}</Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Ver detalles</Button>
+            <Button size="small" style={{color: '#144c24'}}>Ver detalles</Button>
           </CardActions>
         </Card>
-
-        
-
 
       </Grid>
     </Grid>

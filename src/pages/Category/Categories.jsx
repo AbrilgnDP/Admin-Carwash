@@ -111,13 +111,13 @@ const Categories = () => {
   
     return (
       <GridToolbarContainer sx={{justifyContent:'space-between'}}>
-        <Button onClick={handleGoToPage1}>Regresa a la pagina 1</Button>
+        <Button onClick={handleGoToPage1} sx={{ color: "#144c24" }}>Regresa a la pagina 1</Button>
         <GridToolbarQuickFilter/>
         <Button
         variant="text"
         startIcon={<Download/>}
         disableElevation
-        sx={{ color: "secondary" }}
+        sx={{ color: "#144c24" }}
         onClick={exportToExcel}
       >
         Descargar Excel
@@ -132,10 +132,10 @@ const Categories = () => {
       <Button
         variant="contained"
         disableElevation
-        sx={{ color: "primary", my: 5, p: 2, borderRadius: 5 }}
+        sx={{ color: "primary", my: 5, p: 2, borderRadius: 5, backgroundColor: "#144c24" }}
         onClick={createCategory}
       >
-        Registrar nuevo Categoría
+        Registrar nueva Categoría
       </Button>
      
 

@@ -74,7 +74,7 @@ export const Login = () => {
               duration={1000}
               style={{
                 position: "static",
-                minHeight: "40vh",
+                minHeight: "30vh",
               }}
             />
           </Grid>
@@ -82,7 +82,7 @@ export const Login = () => {
             component="form"
             autoComplete="off"
             onSubmit={handleSubmit(login)}
-            sx={{ backgroundColor: "white" }}
+            sx={{ backgroundColor: "#ffffff59" }}
             borderRadius={"20px"}
             position="relative"
             zIndex={2}
@@ -90,8 +90,6 @@ export const Login = () => {
             justifyItems={'center'}
             width={{xs:'90%'}}
             margin={2}
-            border={2}
-            borderColor={'#E94C45'}
             boxShadow={8}
             padding={2}
             maxHeight={'500px'}
@@ -102,7 +100,7 @@ export const Login = () => {
           >
             <Typography
               fontSize={{ xs: 25, sm: 30, md: 35, lg: 34, xl: 40 }}
-              color="#CC3C5C"
+              color="#144c24 "
               align="center"
               alignContent={"center"}
             >
@@ -188,7 +186,7 @@ export const Login = () => {
                   variant="outlined"
                   type="submit"
                   endIcon={<SendSharp />}
-                  style={{ borderRadius: "20px" }}
+                  style={{ borderRadius: "20px", color: "#144c24" }}
                 >
                   Iniciar sesión
                 </Button>
